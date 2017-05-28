@@ -16,12 +16,12 @@ import javax.servlet.http.HttpServletResponse;
 
 @Controller
 @RequestMapping("/json")
-public class BookController {
+public class BookJsonPostController {
 
-    private static final Log logger = LogFactory.getLog(BookController.class);
+    private static final Log logger = LogFactory.getLog(BookJsonPostController.class);
 
     // @RequestBody根据json数据，转换成对应的Object
-    @RequestMapping(value="/testRequestBody",method= RequestMethod.POST,produces={"application/json;charset=UTF-8"})
+    @RequestMapping(value="/book/post",method= RequestMethod.POST,produces={"application/json;charset=UTF-8"})
     public void setJson(@RequestBody Book book,
                         HttpServletResponse response) throws Exception{
         // @RequestBody和response,有request有response

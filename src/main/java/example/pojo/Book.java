@@ -13,6 +13,12 @@ public class Book implements Serializable {
 
     }
 
+    public Book(int id, String name, String author) {
+        this.id=id;
+        this.name=name;
+        this.author=author;
+    }
+
     public Integer getId() {
         return id;
     }
