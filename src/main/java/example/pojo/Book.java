@@ -8,6 +8,11 @@ public class Book implements Serializable {
     private String name;
     private String author;
 
+//    原来的代码没有默认构造函数，结果无法使用json
+    public Book(){
+
+    }
+
     public Integer getId() {
         return id;
     }
