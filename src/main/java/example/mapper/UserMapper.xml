@@ -26,7 +26,19 @@
     </delete>
 
     <!--result map-->
-    <select id="selectUser" resultType="map">
+    <select id="selectUser1" resultType="map">
+        SELECT * FROM TB_USER
+    </select>
+
+    <!--resultmap,数据库表和java对象的mapping文件-->
+    <resultMap id="userResultMap" type="example.pojo.mybatis.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <result property="sex" column="sex"/>
+        <result property="age" column="age"/>
+    </resultMap>
+    <!--推荐使用pojo返回resultmap-->
+    <select id="selectUser2" resultMap="userResultMap">
         SELECT * FROM TB_USER
     </select>
 </mapper>
