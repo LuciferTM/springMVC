@@ -13,7 +13,7 @@
         INSERT INTO TB_USER(name,sex,age)
         VALUES(#{name},#{sex},#{age})
     </insert>
-    <select id="selectUser" parameterType="int" resultType="example.pojo.mybatis.User">
+    <select id="selectOneUser" parameterType="int" resultType="example.pojo.mybatis.User">
         SELECT * FROM TB_USER WHERE id = #{id}
     </select>
     <update id="updateUser" parameterType="example.pojo.mybatis.User">
@@ -24,4 +24,9 @@
     <delete id="deleteUser" parameterType="int">
         DELETE FROM TB_USER WHERE id=#{id}
     </delete>
+
+    <!--result map-->
+    <select id="selectUser" resultType="map">
+        SELECT * FROM TB_USER
+    </select>
 </mapper>

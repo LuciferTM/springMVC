@@ -10,7 +10,7 @@ public class UpdateTest {
         // 获得Session实例
         SqlSession session = TestSqlSessionFactory.getSqlSession();
         // 根据id查询User对象
-        User user = session.selectOne("example.mapper.UserMapper.selectUser",2);
+        User user = session.selectOne("example.mapper.UserMapper.selectOneUser",2);
         // 修改User对象的属性值
         user.setName("tom");
         user.setAge(25);
