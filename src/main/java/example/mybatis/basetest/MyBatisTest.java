@@ -1,4 +1,4 @@
-package example.mybatis;
+package example.mybatis.basetest;
 
 import example.pojo.mybatis.User;
 import org.apache.ibatis.io.Resources;

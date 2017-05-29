@@ -9,8 +9,19 @@
         parameterType属性指明插入时使用的参数类型
         useGeneratedKeys="true"表示使用数据库的自动增长策略
      -->
-    <insert id="save" parameterType="example.pojo.mybatis.User" useGeneratedKeys="true">
+    <insert id="saveUser" parameterType="example.pojo.mybatis.User" useGeneratedKeys="true">
         INSERT INTO TB_USER(name,sex,age)
         VALUES(#{name},#{sex},#{age})
     </insert>
+    <select id="selectUser" parameterType="int" resultType="example.pojo.mybatis.User">
+        SELECT * FROM TB_USER WHERE id = #{id}
+    </select>
+    <update id="updateUser" parameterType="example.pojo.mybatis.User">
+        UPDATE TB_USER
+        SET name=#{name},sex=#{sex},age=#{age}
+        WHERE id = #{id}
+    </update>
+    <delete id="deleteUser" parameterType="int">
+        DELETE FROM TB_USER WHERE id=#{id}
+    </delete>
 </mapper>
