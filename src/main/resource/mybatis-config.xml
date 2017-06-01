@@ -29,6 +29,8 @@
   </environments>
   <!-- mappers告诉了MyBatis去哪里找持久化类的映射文件 -->
   <mappers>
-  	<mapper resource="example/mapper/UserMapper.xml"/>
+      <mapper resource="example/mapper/UserMapper.xml"/>
+      <mapper resource="example/mapper/PersonMapper.xml"/>
+      <mapper resource="example/mapper/CardMapper.xml"/>
   </mappers>
 </configuration>
