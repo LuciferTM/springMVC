@@ -38,5 +38,12 @@
       <mapper resource="example/mapper/ArticleMapper.xml"/>
       <mapper resource="example/mapper/User2Mapper.xml"/>
       <mapper resource="example/mapper/EmployeeMapper.xml"/>
+      <mapper class="example.anotation_mapper.CardMapper"/>
+      <mapper class="example.anotation_mapper.PersonMapper"/>
+      <mapper class="example.anotation_mapper.ClassMapper"/>
+      <mapper class="example.anotation_mapper.StudentMapper"/>
+      <mapper class="example.anotation_mapper.User2Mapper"/>
+      <mapper class="example.anotation_mapper.OrderMapper"/>
+      <mapper class="example.anotation_mapper.ArticleMapper"/>
   </mappers>
 </configuration>
