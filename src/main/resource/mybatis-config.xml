@@ -34,5 +34,8 @@
       <mapper resource="example/mapper/CardMapper.xml"/>
       <mapper resource="example/mapper/ClassMapper.xml"/>
       <mapper resource="example/mapper/StudentMapper.xml"/>
+      <mapper resource="example/mapper/OrderMapper.xml"/>
+      <mapper resource="example/mapper/ArticleMapper.xml"/>
+      <mapper resource="example/mapper/User2Mapper.xml"/>
   </mappers>
 </configuration>
