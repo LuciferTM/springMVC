@@ -37,5 +37,6 @@
       <mapper resource="example/mapper/OrderMapper.xml"/>
       <mapper resource="example/mapper/ArticleMapper.xml"/>
       <mapper resource="example/mapper/User2Mapper.xml"/>
+      <mapper resource="example/mapper/EmployeeMapper.xml"/>
   </mappers>
 </configuration>
