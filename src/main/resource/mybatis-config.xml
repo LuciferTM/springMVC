@@ -45,5 +45,6 @@
       <mapper class="example.anotation_mapper.User2Mapper"/>
       <mapper class="example.anotation_mapper.OrderMapper"/>
       <mapper class="example.anotation_mapper.ArticleMapper"/>
+      <mapper class="example.anotation_mapper.EmployeeMapper"/>
   </mappers>
 </configuration>
